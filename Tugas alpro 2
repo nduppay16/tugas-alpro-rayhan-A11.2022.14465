@@ -1,0 +1,70 @@
+//deret ganjil
+int main()
+{
+ int jumlah_deret,i;
+
+ cout << "Jumlah deret yang diinginkan: ";
+ cin >> jumlah_deret;
+
+ for (i=1;i<=jumlah_deret;i++) {
+   cout << (i * 2) -1 << " ";
+ }
+
+ cout << endl;
+ return 0;
+}
+
+
+//deret genap
+
+int main()
+{
+ int jumlah_deret,i;
+
+ cout << "Jumlah deret yang diinginkan: ";
+ cin >> jumlah_deret;
+
+ for (i=1;i<=jumlah_deret;i++) {
+   cout << i * 2 << " ";
+ }
+
+ cout << endl;
+ return 0;
+}
+
+//minimum maksimum
+int main() {
+  int maksimum, jumlah, i = 1, lokasi;
+  cout << "Masukkan jumlah elemen: ";
+  cin >> jumlah;
+  int array[jumlah];
+  cout << "Masukkan " << jumlah << " angka\n";
+  for (i = 0; i < jumlah; i ++) {
+    cout << "Elemen ke-" <<(i+1) <<": ";
+    cin >> array[i];
+  }
+  maksimum = array[0];
+  for(i = 0; i < jumlah; i++) {
+    if (array[i] > maksimum)  {
+      maksimum = array[i];
+      lokasi = i+1;
+    }
+  }
+  cout << "Nilai maksimum adalah " << maksimum << " berada di elemen ke " << lokasi << endl;
+}
+
+//pemfaktoran
+int main()
+{
+    int N,a;
+    cout<<"Masukkan Angka = ";
+    cin>>N;
+    cout<<"Faktor Bilangan dari "<<N<<" adalah ";
+    for(a=N;a>0;a--){
+        if(N%a==0){
+            cout<<a<<" ";
+        }
+    }
+    cout<<endl;
+    return 0;
+}
